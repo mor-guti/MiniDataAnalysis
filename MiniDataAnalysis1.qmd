@@ -30,7 +30,7 @@ Typically, R Packages are loaded in at the very beginning of the analysis. If yo
 #| warning: false
 #| message: false
 library(tidyverse)
-library(diversedata)
+#library(diversedata)
 library(moderndive)
 #--- Add any other packages below this line ---#
 
@@ -97,9 +97,9 @@ squirrel |>
   ggplot(aes(`Primary Fur Color`)) +
   geom_bar()
 
-squirrel |>
-  mutate(jump_height = as.numeric(`Above Ground (Height in Feet)`)) |>
-  summarise(mean_height = mean(jump_height, na.rm=TRUE))
+#squirrel |>
+ #mutate(jump_height = as.numeric(`Above Ground (Height in Feet)`)) |>
+# summarise(mean_height = mean(jump_height, na.rm=TRUE))
   
 ```
 
@@ -350,10 +350,10 @@ Here is an example of a specific, explicit debug:
 
 ## Generative AI Statement
 
-Generative AI (through [LIST MODELS USED, i.e. ChatGPT, CoPilot)] was used to
+Generative AI (through [google was used to find an error in my code
 help me complete  this assignment in the following ways.
 
-1. [Describe here]
+1. In music tidy I kept reciving errors for unfinshed code I used google to tell me the error which was i forgot to add a second ")" to the end of the code.
 
 2. [Describe here]
 
